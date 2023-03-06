@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <style type="text/css">
+            @font-face {
+                font-family: "aileronbold";
+                src: url("../fonts/aileron-bold-webfont.woff2") format("woff2"),
+                    url("../fonts/aileron-bold-webfont.woff") format("woff");
+                font-weight: normal;
+                font-style: normal;
+            }
+
+            @font-face {
+                font-family: "aileronregular";
+                src: url("../fonts/aileron-regular-webfont.woff2") format("woff2"),
+                    url("../fonts/aileron-regular-webfont.woff") format("woff");
+                font-weight: normal;
+                font-style: normal;
+            }
+
+
+            /* CLIENT-SPECIFIC STYLES */
+            body, html{
+                font-family: Arial, sans-serif, 'Open Sans';
+                font-size: 14px;
+            }
+            body,
+            table,
+            td,
+            a {
+                -webkit-text-size-adjust: 100%;
+                -ms-text-size-adjust: 100%;
+            }
+
+            table,
+            td {
+                mso-table-lspace: 0pt;
+                mso-table-rspace: 0pt;
+            }
+
+            img {
+                -ms-interpolation-mode: bicubic;
+            }
+
+            img {
+                border: 0;
+                height: auto;
+                line-height: 100%;
+                outline: none;
+                text-decoration: none;
+            }
+
+            table {
+                border-collapse: collapse !important;
+            }
+
+            body {
+                height: 100% !important;
+                margin: 0 !important;
+                padding: 0 !important;
+                width: 100% !important;
+        
+            }
+
+            a[x-apple-data-detectors] {
+                color: inherit !important;
+                text-decoration: none !important;
+                font-size: inherit !important;
+                font-family: inherit !important;
+                font-weight: inherit !important;
+                line-height: inherit !important;
+            }
+
+            @media screen and (max-width:600px) {
+                h1 {
+                    font-size: 32px !important;
+                    line-height: 32px !important;
+                }
+            }
+
+            div[style*="margin: 16px 0;"] {
+                margin: 0 !important;
+            }
+
+        </style>
+    </head>
+
+    <body style="background-color: #fff; margin: 0 !important; padding: 0 !important;">
+        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+            <tr>
+                <td align="center">
+                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tr>
+                            <td>
+                                <hr style="border-bottom:20px solid #364150;margin: 0;">
+                                </hr>
+                            </td>
+                        </tr>
+                        
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <table border="0" cellpadding="0" cellspacing="0" width="100%"
+                        style="max-width: 500px;padding: 0 20px;">
+                        <tr>
+                            <td bgcolor="#ffffff" align="left" valign="top" style="padding: 20px 0;">
+                                 <img src="images/logo.png" alt="logo" style="display: block; border: 0px;" /> 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="font-size: 16px; color: #333;padding-top: 20px;display: inline-flex;" bgcolor="#ffffff" align="left">
+                                Hello <p style="margin: 0 0 0 5px;color: #ff6652;font-weight: 600">
+                                    {{context.username}},</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td bgcolor="#ffffff" align="left" style="font-size: 16px; color: #333;padding-top: 10px;line-height: 22px;">
+                                <p style="margin: 0;">Congratulations, You have register successfully
+                                </p>
+
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td bgcolor="#ffffff" align="left" style="font-size: 16px; color: #333;padding-top: 10px;line-height: 22px;">
+                                <a href="{{context.url}}{{url_for('user.VerifyMail')}}?token={{context.token}}" style="margin: 0 0 0 5px;color: #ff6652;font-weight: 600">
+                                    Click Here to Verify Account  </a>
+
+                            </td>
+                        </tr>
+                        
+                        
+                        <tr>
+                            <td bgcolor=" #ffffff" align="left">
+                                <p
+                                    style="margin: 30px 0 6px 0;font-size: 16px;color: #333;">
+                                    Thank
+                                    You,
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                          
+                        </tr>
+                        <tr>
+                            <td
+                              style="
+                                font-family: Arial, Helvetica, sans-serif;
+                                font-weight: 300;
+                                color: #3e3e3e;
+                                text-decoration: none;
+                                display: grid;
+                              "
+                            >
+                                If you are in need of assistance please contact
+                              <a
+                                style="
+                                  font-family: Arial, Helvetica, sans-serif;
+                                  font-weight: 300;
+                                  color: #3e3e3e;
+                                  text-decoration: none;
+                                "
+                                href="mailto:support@gmail.com"
+                              >
+                              support@gmail.com</a
+                              >
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <hr style="border-bottom:20px solid #364150;margin: 0;">
+                    </hr>
+                </td>
+            </tr>
+           
+                      
+        </table>
+    </body>
+
+</html>
